@@ -1,0 +1,313 @@
+.container {
+  margin: auto;
+  margin: 20px auto 10px auto;
+  width: 85vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px 2px #222222;
+  background: rgba(16, 16, 16, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  height: 90vh;
+  padding-bottom: 0px;
+  background-size: cover;
+  background-position: center;
+  flex: 1 1;
+  border-radius: 10px;
+  background: rgba(56, 56, 56, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.hourlyButtonContainer {
+  margin-top: 4vw;
+  display: flex;
+  justify-content: center;
+}
+
+.weeklyButtonContainer {
+  margin-top: 4vw;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  border: 1px solid #203a43;
+  box-shadow: 1px 2px 10px #203a43;
+  color: #ffcc70;
+  background-color: #203a43;
+  border-radius: 5px;
+  transition: 0.1s all ease-in-out;
+  opacity: 0.75;
+  padding: 15px;
+}
+
+.button:hover {
+  opacity: 1;
+  color: #203a43;
+  border: 1px solid #ffcc70;
+  box-shadow: 1px 2px 10px #ffcc70;
+  background-color: #ffcc70;
+}
+
+.button.visible {
+  opacity: 1;
+  color: #203a43;
+  border: 1px solid #ffcc70;
+  box-shadow: 1px 2px 10px #ffcc70;
+  background-color: #ffcc70;
+}
+
+.weatherContainer {
+  margin-top: -15%;
+  padding: 15px;
+}
+
+.weatherSide {
+  flex: 2 1;
+  height: 90vh;
+  background: rgba(16, 16, 16, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.weatherSide p{
+  font-size: 1.8rem;
+}
+
+.weatherSide h1 {
+  font-size: 1.7vw;
+  color: rgb(207, 207, 207);
+  font-weight: bold;
+  padding-left: 24vw;
+  top: 7vw;
+  position: relative;
+}
+.weatherSide {
+  color: rgb(207, 207, 207);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.weatherSide h2 {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-left: 25vw;
+  position: relative;
+}
+
+.forecast-title-button {
+  font-size: 1.2vw;
+  font-weight: 700;
+  margin-top: 2vh;
+  position: relative;
+}
+
+.temp-unit-button-container {
+  top: 1vh;
+  position: absolute;
+  right: 5%;
+  display: flex;
+}
+
+.temp-unit-button-container button {
+  margin: 5% 5%;
+  border-radius: 50px;
+  padding: 1vw;
+  border: none;
+}
+
+.buttonU {
+  font-size: 1vw;
+  cursor: pointer;
+  border: 1px solid #203a43;
+  box-shadow: 1px 2px 10px #203a43;
+  color: #ffcc70;
+  background-color: #203a43;
+  transition: 0.2s all ease-in-out;
+  padding: 0.5vw;
+  margin: 2% 5%;
+  border-radius: 50%;
+  opacity: 0.75;
+}
+
+.buttonU:hover {
+  cursor: pointer;
+  opacity: 1;
+  border: 1px solid #ffcc70;
+  color: #203a43;
+  border: 1px solid #ffcc70;
+  background-color: #ffcc70;
+}
+
+.buttonU.active {
+  cursor: default;
+  opacity: 1;
+
+  color: #203a43;
+  border: 1px solid #ffcc70;
+  background-color: #ffcc70;
+}
+
+.theme-button {
+  cursor: pointer;
+  border: 1px solid #203a43;
+  box-shadow: 1px 2px 10px #203a43;
+  transition: 0.2s all ease-in;
+  padding: 1vw;
+  margin: 2% 5%;
+  border-radius: 50%;
+  opacity: 0.75;
+  background-image: url('../public/day-and-night.png');
+  background-size: cover;
+}
+
+.theme-button:hover {
+  opacity: 1;
+}
+
+.theme-button:not(.light) {
+  transform: rotate(180deg);
+}
+
+/* LIGHT */
+
+.buttonU.light {
+  opacity: 1;
+  border: none;
+  color: #e1795f;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: none;
+}
+
+.buttonU.light:hover {
+  box-shadow: 33px 33px 66px #bebebe, -33px -33px 66px #ffffff;
+}
+
+.buttonU.light.active {
+  cursor: pointer;
+  border: 1px solid #007185;
+  opacity: 1;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+}
+
+.button.light {
+  color: #e1795f;
+  border: none;
+  opacity: 1;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+}
+
+.button.light:hover {
+  box-shadow: 33px 33px 66px #bebebe, -33px -33px 66px #ffffff;
+}
+
+.button.light.visible {
+  cursor: pointer;
+  border: 1px solid #007185;
+  opacity: 1;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+}
+
+.theme-buttons-container label.light {
+  color: #007185;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #aaaaaa, -20px -20px 60px #ffffff;
+  /* background-color:; */
+}
+
+.theme-buttons-container label {
+  position: relative;
+  font-size: 1vw;
+  top: 0.5vh;
+  right: 10%;
+  opacity: 0;
+  padding: 5px;
+  padding-left: 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  z-index: -1;
+  transition: 0.2s all ease-out;
+  background-color: rgb(207, 207, 207);
+  color: #212121;
+}
+
+.theme-button:hover + label {
+  opacity: 1;
+}
+
+.container.light {
+  background: rgba(224, 224, 224, 1);
+  opacity: 1;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.weatherSide.light {
+  border-radius: 0;
+  background-color: rgb(224, 224, 224);
+  box-shadow: none;
+}
+
+.search.light {
+  border-radius: 0;
+  background-color: #dddddd;
+  box-shadow: 20px 20px 60px rgba(190, 190, 190, 1);
+}
+
+.weatherSide.light {
+  color: #3b3b3b;
+
+}
+
+.weatherSide.light h1 {
+  color: #3b3b3b;
+}
+
+.weatherSide.light h2 {
+  color: #3b3b3b;
+}
+
+.search.light .search-title {
+  color: #3b3b3b;
+}
+
+.theme-button.light {
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}

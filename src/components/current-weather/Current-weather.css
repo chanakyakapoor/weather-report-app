@@ -1,0 +1,127 @@
+.weather-container {
+  margin-top: 10;
+  transition: 10s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  flex: 1 1;
+  width: 70%;
+  border-radius: 6px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
+  justify-content: space-between;
+  padding: 2vh;
+  margin-top: 15%;
+  display: flex;
+  transition: 5s all ease-in-out;
+  background: #0f2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffcc70;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+.city {
+  font-weight: 300;
+  line-height: 1;
+  font-size: 1vw;
+}
+
+.left p {
+  display: block;
+  margin: 0.2vh;
+  font-family: 'Lato';
+}
+
+.current-weather-description {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 2vw;
+}
+
+.left {
+  padding-left: 5%;
+  width: 50%;
+}
+
+.description-container {
+  font-size: 1.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.weather-icon {
+  height: 5vw;
+  width: auto;
+}
+
+.right {
+  padding-top: 2.5%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: flex-start;
+  border-left: 1px solid #1f1a1a3b;
+  color: #757575;
+}
+
+.right-items {
+  padding: 0.2vh;
+}
+
+.temperature {
+  font-weight: 800;
+  font-size: 2.5vw;
+  color: #ffcc70;
+}
+
+.parameter-row {
+  margin: 5px;
+}
+
+.parameter-label {
+  font-weight: 600;
+}
+
+.details {
+  padding-top: 1vw;
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+.description-container {
+  color: #ffcc70;
+}
+
+/* DAY */
+
+.weather.light {
+  background: linear-gradient(145deg, #dbd6d6, #cacaca);
+  box-shadow: 20px 20px 60px #bebebe, -40px -40px 60px #ffffff,
+    inset 5px 5px 5px #bebebe;
+}
+.weather.light .right {
+  border-left: none;
+}
+.weather.light .description-container,
+.weather.light .description {
+  color: #dd674a;
+}
+
+.weather.light .temperature {
+  color: #ec6746;
+}
+
+.weather.light .details {
+  color: rgba(90, 89, 89, 0.973);
+}
